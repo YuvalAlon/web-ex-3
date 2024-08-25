@@ -1,0 +1,70 @@
+<!-- form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #444;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input{
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+        select {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter your name and choose your favorite animal:</h1>
+    <form action="/submit" method="POST">
+        <!-- User input textbox -->
+        <input type="text" name="username" placeholder="Enter your name..." required><br><br>
+
+        <!-- Dropdown list -->
+        <label for="animals">Select your favorite animal:</label>
+        <select name="chosenanimal" id="animals">
+            <option value="lion">Lion</option>
+            <option value="elephant">Elephant</option>
+            <option value="tiger">Tiger</option>
+            <option value="giraffe">Giraffe</option>
+            <option value="monkey">Monkey</option>
+        </select><br><br>
+
+        <!-- Submit button -->
+        <button type="submit"></i>Submit</button>
+    </form>
+</body>
+</html>
